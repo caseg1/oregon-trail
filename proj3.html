@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!-- 
+File: 	proj3.html
+Members:
+		Ahmed Almheiri
+		Casey Grove
+		Abigail Trankle
+-->
+<html>
+<head>
+<title></title>
+<link href="proj3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="proj3.js"></script>
+
+<div id="mainAndLearn">
+	<img src="img/theoregontrail.png" id="mainHead">
+	
+	<div id="mainMenu">
+		You may:
+		<ol id="mainMenuList" class="padleft">
+			<li>Travel the trail</li>
+			<li>Learn about the trail</li>
+			<li>See the Oregon Top Ten</li>
+			<li>Choose Management Options</li>
+			<li>End</li>
+		</ol>
+		What is your choice? <span id="menuInput"></span>_
+	</div>
+
+	<div id="learnA">
+		<div id="learn1" class="learn">
+			Try taking a journey by covered wagon across 2000 miles of plains, rivers, and
+			mountains. Try! On the plains, will you slosh your oxen through mud and 
+			water-filled ruts or will you plod through dust six inches deep?
+		</div>
+		<div id="learn2" class="learn">
+			How will you cross the rivers? If you have money, you might 
+			take a ferry (if there is a ferry). Or, you can ford the river 
+			and hope you and your wagon aren't swallowed alive!
+		</div>
+		<div id="learn3" class="learn">
+			What about the supplies? well, if you're low on food you can 
+			hunt. You might get a buffalo... you might. And there are bear in the mountains.
+		</div>
+		<div id="learn4" class="learn">
+			At the Dallas, you can try navigating the Columbia River,
+			but if running the rapids with a makeshift raft makes you 
+			quesy, better take the Barlow Road.
+		</div>
+		<div id="learn5" class="learn">
+			If for some reason you don't survive -- your wagon burns,
+			or thieves steal your oxen, or you run out of provisions, or 
+			you die of cholera -- don't give up! Try again...and
+			again...until your name is up with the others on the Oregon Top Ten.  
+		</div>
+		<div id="learn6" class="learn">
+			<p align="center">Control-S key</p>
+			You may turn the sound on or off during the program by pressing Control-S.
+		</div>
+		<div id="learn7" class="learn">
+			<p align="center">Esc key</p>
+			You may want to quit in the middle of the program. If so, press the 
+			Escape (Esc) key twice whenever the computer is waiting for a response.
+		</div>
+	</div>
+
+	<img src="img/bottom.png" id="mainFoot">	
+	<div id="learnSpace">Press SPACE BAR to continue</div>
+</div>
+
+<div id="startGame">
+	<img src="img/bottom.png" id="startHead">	
+
+	<div id="startText">
+		Many kinds of people made the trip to Oregon.
+		<br><br>
+		You may:
+			<ol id="charSelectList" class="padleft">
+				<li>Be a Banker from Boston</li>
+				<li>Be a Carpenter from Ohio</li>
+				<li>Be a Farmer from Illinois</li>
+				<li>Find out the differences between these choices</li>
+			</ol>
+		What is your choice? <span id="charInput"></span>_
+	</div>
+
+	<div id="diffChar">
+		Traveling to Oregon isn't easy! But if you're a banker, you'll have more
+		money for supplies and services than a carpenter or a farmer.
+		<br><br>
+		However, the harder you have to try, the more points you deserve! Therefore,
+		the farmer earns the greatest number of points and the banker earns the least.
+	</div>	
+	
+	<img src="img/bottom.png" id="startFoot">
+	<div id="diffCharSpace">Press SPACE BAR to continue</div>
+</div>
+
+
+<div id="namesMenu">
+	<img src="img/names.png" id="imgNames">
+	
+	<div id="firstQ">What is the first name of the wagon leader? <span id="firstName"></span>_</div>
+	
+	<div id="secondQ">What are the first names of the four other members in your party?
+		<ol id="membersList" class="namesL">
+			<li><span id="firstN"></span></li>
+			<li><span id="secondName"></span><span id = "u2">_</span></li>
+			<li><span id="thirdName"></span><span id = "u3">_</span></li>
+			<li><span id="fourthName"></span><span id = "u4">_</span></li>
+			<li><span id="fifthName"></span><span id = "u5">_</span></li>
+
+		</ol>
+	</div>
+	<p id="namesEnter">(Enter names or press Enter)<p>
+	<p id="namesCorrect">Are these names correct? <span id="namesCorrectInput"></span>_</p>
+	<p id="namesChange">Change which name? <span id="namesChangeInput"></span>_</p>
+</div>
+
+<div id ="monthMenu">
+	<img src="img/bottom.png" id="monthHead">
+	
+	<div id="monthText">
+		It is 1848. Your jumping off place for Oregon is Independence,
+		Missouri. You must decide which month to leave Independece.
+		<ol id="monthList" class="padleft">
+			<li>March</li>
+			<li>April</li>
+			<li>May</li>
+			<li>June</li>
+			<li>July</li>
+			<li>Ask for advice</li>
+		</ol>
+		What is your choice? <span id="monthInput"></span>_
+	</div>
+	
+	<div id="monthHelp">
+		You attend a public meeting held for "folks with the California
+		- Oregon fever." You're told: </br></br> If you leave too early,
+		there won't be any grass for your oxen to eat. If you leave too late,
+		you many not get to Oregon before winter comes. If you leave at just
+		the right time, there will be green grass and the weather will still
+		be cool.
+	</div>
+
+	<img src="img/bottom.png" id="monthFoot">
+	<div id="monthSpace">Press SPACE BAR to continue</div>
+</div>
+
+<div id ="generalStore" class="centered">
+	
+	
+	
+		<ol id="storeList">
+		<li>Oxen</li>
+		<li>Food</li>
+		<li>Clothing</li>
+		<li>Bait</li>
+		<li>Wagon wheel</li>
+		<li>Wagon axle</li>
+		<li>Wagon tongue</li>
+	</ol>
+	Total bill:  $<span id = "totalBill"></span>
+	</br></br>
+	Amount you have: $<span id = "money"></span>
+	</br></br>
+	Which item would you like to buy? <span id="gsInput"></span>_
+	</br></br>
+	Press SPACE BAR to leave store
+</div>
+<div id = "win" class = "centered">YOU HAVE WON</div>
+<div id = "oxen" class = "centered">
+	
+	<br>
+	<br>
+	There are 2 oxen in a yoke;
+	I recommend at least 3 yoke.
+	I charge $40 a yoke.<br><br><br>
+
+	How many yoke do you want?<span id ="oxenInput"></span>_<br>
+	Bill so far: $<span id = "totalBillox"></span>
+</div>
+
+<div id = "food" class = "centered">
+	
+	<br>
+	<br>
+I recommend you take at 
+least 200 pounds of food
+for each person in your 
+family. I see you have 
+5 people in all. You'll need
+flour, sugar, bacon, and 
+coffee. My price is 20 
+cents a pound .<br><br><br>
+
+	How many pounds of food do you want?<span id ="foodInput"></span>_<br>
+	Bill so far: $<span id = "totalBillfo"></span>
+</div>
+
+<div id = "clothing" class = "centered">
+	
+	<br>
+	<br>
+You'll need warm clothing in the mountains. I recommend taking at least 2 sets of clothes per person. Each set is $10.
+<br><br><br>
+
+	How many sets of clothes do you want?<span id ="clothesInput"></span>_<br>
+	Bill so far: $<span id = "totalBillcl"></span>
+</div>
+
+<div id = "bait" class = "centered">
+	
+	<br>
+	<br>
+	I sell bait in boxes of 20 baits. Each box costs $2.00.
+<br><br><br>
+
+	How many boxes of bait do you want?<span id ="baitInput"></span>_<br>
+	Bill so far: $<span id = "totalBillba"></span>
+</div>
+
+<div id = "wheel" class = "centered">
+	
+	<br>
+	<br>
+	It's a good idea to have a few spare parts for your wagon. <br>
+	wagon wheel  - $10 each
+<br><br><br>
+
+	How many wagon wheels do you want?<span id ="wheelInput"></span>_<br>
+	Bill so far: $<span id = "totalBillwh"></span>
+</div>
+
+<div id = "axle" class = "centered">
+	
+	<br>
+	<br>
+	It's a good idea to have a few spare parts for your wagon. <br>
+	wagon axle  - $10 each
+<br><br><br>
+
+	How many wagon axles do you want?<span id ="axleInput"></span>_<br>
+	Bill so far: $<span id = "totalBillax"></span>
+</div>
+
+<div id = "tongue" class = "centered">
+	
+	<br>
+	<br>
+	It's a good idea to have a few spare parts for your wagon. <br>
+	wagon tongue  - $10 each
+<br><br><br>
+
+	How many wagon tongue do you want?<span id ="tongueInput"></span>_<br>
+	Bill so far: $<span id = "totalBillto"></span>
+</div>
+
+
+<div id="town">
+	<div id="townHead">
+		<span id="townName" align="center"></span><br>
+		<span id="date" align="center"></span>
+	</div>
+	
+	<div id="townConditions">
+		Weather: <span id="weather"></span><br>
+		Health: <span id="health"></span><br>
+		Pace: <span id="pace"></span><br>
+		Rations: <span id="rations"></span>
+	</div>
+	
+	<div id="townMenu">
+You may:
+		<ol class="townList">
+			<li>Continue on trail</li>
+			<li>Check supplies</li>
+			<li>Look at map</li>
+			<li>Change pace</li>
+			<li>Change food rations</li>
+			<li>Stop to rest</li>
+			<li>Attempt to trade</li>
+			<li>Talk to people</li>
+			<li>Buy supplies</li>
+		</ol>
+What is your choice? <span id="townInput"></span>_
+	</div>
+</div>
+
+<div id="options">
+You may:
+	<ol class="optionsList">
+		<li>See the current Top Ten list</li>
+		<li>Erase the current Top Ten list</li>
+		<li>Return to the main menu</li>
+	</ol>
+What is your choice? <span id="optionInput"></span>_
+</div>
+
+<div id = "supplies" >
+	Your Supplies<br><br>
+	oxen 			 <span id = "oxenSu"></span><br>
+	sets of clothing <span id = "clothSu"></span><br>
+	baits 			 <span id = "baitSu"></span><br>
+	wagon wheels 	 <span id = "wheelSu"></span><br>
+	wagon axle 	     <span id = "axleSu"></span><br>
+	wagon tongues 	 <span id = "tongueSu"></span><br>
+	pounds of food 	 <span id = "foodSu"></span><br>
+	money left 	     <span id = "moneySu"></span><br>
+	<br>
+	<span>Press SPACE BAR to continue</span>
+</div>
+<div id = "riverCross" class = "centered">
+	<span id ="curRiver"></span><br>
+	<span id = "curDate"></span><br>
+	<br>
+	 Your may:<br>
+	<ol class="rivList">
+			<li>attempt to ford the river</li>
+			<li>caulk the wagon and float it across</li>
+			<li>take a ferry across</li>
+			
+	</ol>
+	What is your choice? <span id="rivInput"></span>_
+	<span id = "crossed">You have crossed the river!</span>
+	<span id = "failedCross">You drowned!</span>
+	<span id ="ferry">You lost 3 days waiting for the ferry</span>
+	<span id ="spaceBar">press SPACE BAR to continue</span>
+</div>
+<div id = "gameOver" class = "centered">GAME OVER!!!</div>
+<div id = "reach" class = "centered">
+	<span id = "locShow"></span><br><br>
+	<span id ="spaceBar">press SPACE BAR to continue</span>
+</div>
+<div id = "changePace" class = "centered">
+	Change pace<br>
+	(Currently "<span id = "curPace"></span>")<br>
+	The pace at which you travel<br>
+	can change. Your choices are:<br>
+	<ol class="paceList">
+			<li>a steady pace</li>
+			<li>a strenuous pace</li>
+			<li>a grueling pace</li>
+			<li>find out what these different paces mean</li>
+	</ol>
+	What is your choice? <span id="paceInput"></span>_
+</div>
+<div id = "paceInfo">
+	steady - you travel for about 8 hours a<br>
+	day, taking frequent rests. You take<br>
+	care not to get too tired.<br><br>
+	strenuous - you travel about 12 hours<br>
+	a day, starting just after sunrise<br>
+	and stopping shortly before sunset.<br>
+	you stop to rest only when necessary.<br>
+	you finish each day feeling very <br>tired<br><br>
+	grueling - you travel about 16 hours<br>
+	a day, starting before sunrise and<br>
+	continuing until dark. you almost<br>
+	never stop to rest. You do not get<br>
+	enough sleep at night. You finish<br>
+	each day feeling absolutely<br>
+	exhausted, and your health suffers.<br><br>
+	<span>Press SPACE BAR to continue</span>
+
+
+</div>
+<div id = "changeRations" class = "centered">
+	Change food rations<br>
+	(Currently "<span id = "curRation"></span>")<br>
+	The amount of food the people in<br>
+	your party eat each day can<br>
+	change. These amounts are:
+	<ol class="rationsList">
+			<li>filling - meals are large and generous.</li>
+			<li>meager - meals are small, but adequate.</li>
+			<li>bare bones - meals are very small; everyone stays hungry.</li>
+			
+	</ol>
+	What is your choice? <span id="rationInput"></span>_
+</div>
+<div id="traveling">
+	<img src="img/hills.png" id="imgHills">
+	<p id="wagon"></p>
+	
+	<div id="terrain">
+		<div id="popup"></div>
+	</div>
+	
+	<p id="sizeUpSituation">Press ENTER to size up the situation</p>
+	
+	<dl id="travelConditions">
+		<dt>Date</dt><dd><span id="travelDate" class="nospace"></span></dd><br>
+		<dt>Weather</dt><dd><span id="travelWeather" class="nospace"></span></dd><br>
+		<dt>Health</dt><dd><span id="travelHealth" class="nospace"></span></dd><br>
+		<dt>Food</dt><dd><span id="travelFood" class="nospace"></span></dd><br>
+		<dt>Next landmark</dt><dd><span id="travelNextLM" class="nospace"></span></dd><br>
+		<dt>Miles traveled</dt><span id="travelTraveled" class="nospace"></span><dd></dd>
+	</dl>
+	
+	<p id="travelSpace">Press SPACE BAR to continue</p>
+	
+</div>
+
+<!-- <img src="bottom.png" id="imgFoot"> -->
+<!-- <div id="space">Press SPACE BAR to continue</div> -->
+
+</body>
+</html>

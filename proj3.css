@@ -1,0 +1,380 @@
+/*
+File:	proj3.css
+Members:
+		Ahmed Almheiri
+		Casey Grove
+		Abigail Trankle
+*/
+@font-face {
+	font-family: apple2;
+	src: url(apple2.ttf);
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: apple2;
+	font-size: 18px;
+	line-Height: 15pt;
+}
+.centered {
+	position: fixed;
+	top: 15%;
+	left: 30%;
+	transform: translate(-15%, 5%);
+}
+ol.padleft {
+	padding-left: 4em;
+}
+
+/*main + learn menus*/
+#mainAndLearn {
+	border-style:;
+	border-color: red;
+	min-height: 400px;
+	max-width: 600px;
+	overflow: hidden;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#mainHead {
+	border-style:;
+	border-color: green;
+}
+#mainMenu {
+	display: block;
+	border-style:;
+	border-color: yellow;
+	margin: 20px 0px 0px 50px;
+}
+#learnA {
+	border-style:;
+	border-color: yellow;
+}
+.learn {
+	display: none;
+	margin: 35px 30px 30px 30px;
+}
+#mainFoot {
+	border-style:;
+	border-color: blue;
+	
+	position: absolute;
+	bottom: 33px;
+	/*top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+}
+#learnSpace {
+	border-style:;
+	border-color: orange;
+	display: none;
+	text-align: center;
+	width: 100%;
+	
+	position: absolute;
+	bottom: 0;
+}
+
+/* travel the trail/start game */
+#startGame {
+	display: none;
+	border-style:;
+	border-color: red;
+	/*min-width:
+	max-width: */
+	min-height: 380px; 
+	overflow: hidden;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#startHead {
+	display: none;
+}
+#startText {
+	border-style:;
+	border-color: yellow;
+	max-width: 500px;
+	margin: 15px 35px 0px 35px;
+}
+#diffChar {
+	border-style:;
+	border-color: yellow;
+	display: none;
+	margin: 25px 35px 0px 35px;
+	max-width: 527px;
+}
+#startFoot {
+	display: none;
+	position: absolute;
+	bottom: 33px;
+}
+#diffCharSpace {
+	border-style:;
+	border-color: orange;
+	display: none;
+	text-align: center;
+	width: 100%;
+	
+	position: absolute;
+	bottom: 0;
+}
+/* travel/start --Names menu */
+#namesMenu {
+	display: none;
+	border-style:;
+	border-color: red;
+	max-width: 614px;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#imgNames {
+	border-style:;
+	border-color: blue;
+}
+#firstQ {
+	border-style:;
+	border-color: orange;
+	padding-left: 60px; 
+}
+#secondQ {
+	border-style:;
+	border-color: orange;
+	display: none;
+}
+#namesEnter {
+	display: none;
+	text-align: center;
+}
+#namesCorrect {
+	border-style:;
+	border-color: pink;
+	display: none;
+	position: absolute;
+	bottom: -25px;
+	left: -2px;
+}
+#namesChange {
+	border-style:;
+	border-color: pink;
+	display: none;
+	position: absolute;
+	bottom: -25px;
+	left: -2px;
+}
+li {
+	border-style:;
+	border-color: green;
+}
+ol.namesL {
+	padding-left: 46px;
+}
+
+/* month */
+#monthMenu{
+	display: none;
+	border-style: ;
+	border-color: red;
+	max-width: 614px;
+	min-height: 400px;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#monthText {
+	border-style: ;
+	border-color: yellow;
+	min-width: 520px;
+	margin: 25px 35px 0px 55px;
+}
+#monthHelp {
+	display: none;
+	border-style: ;
+	border-color: yellow;
+	min-width: 520px;
+	margin: 25px 35px 0px 55px;
+}
+#monthFoot {
+	position: absolute;
+	bottom: 33px;
+}
+#monthSpace {
+	display: none;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+#options {
+	display: none;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* town */
+#town {
+	display: none;
+}
+#townHead {
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#townConditions {
+	background-color: white;
+	color: black;
+	padding: 3px 80px 5px 15px;
+	font-weight: bold;
+	width: 50%;
+	
+	position: fixed;
+	top: 21%;
+	left: 40%;
+	transform: translate(-30%, -30%);
+}
+#townMenu {
+	position: fixed;
+	top: 55%;
+	left: 42%;
+	transform: translate(-50%, -50%);
+}
+/* traveling */
+#traveling {
+	display: none;
+/* 	border-style:;
+	border-color: red; */
+	max-width: 645px;
+	height: 420px;
+	overflow: hidden;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#imgHills {
+	margin-bottom: 0px;
+}
+#wagon {
+	width: 155px;
+	height: 62px;
+	background: url(img/wagon.png) 0px 0px;
+	position: relative;
+	left: 430px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#terrain {
+	height: 95px;
+	width: 648px;
+	background-color: #04b600;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#sizeUpSituation {
+	/* display: none; */
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#travelConditions {
+	background-color: white;
+	color: black;
+	padding-top: 9px;
+	height: 130px;
+	width: 648px;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+span.nospace {
+	margin: 0;
+	display: inline-block;
+	float: left;
+}
+dt { 
+	display: block; 
+	float: left; 
+	width: 340px; 
+	text-align: right;
+}
+dt:after {
+	content:':';
+}
+dd { 
+	display:block;
+}
+#travelSpace {
+	/* display: none; */
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+
+
+
+#generalStore{
+	display: none;
+}
+#oxen{
+	display: none;
+}
+#food{
+	display: none;
+}
+#clothing{
+	display: none;
+}
+#bait{
+	display: none;
+}
+#wheel{
+	display: none;
+}
+#axle{
+	display: none;
+}
+#tongue{
+	display: none;
+}
+#supplies{
+	display: none;
+}
+#changePace{
+	display: none;
+}
+#paceInfo{
+	display: none;
+}
+#changeRations{
+	display: none;
+}
+#riverCross{
+	display: none;
+}
+#gameOver{
+	display: none;
+}
+#reach{
+	display: none;
+}
+#win{
+	display: none;
+}
